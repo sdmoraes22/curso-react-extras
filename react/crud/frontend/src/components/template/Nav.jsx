@@ -1,16 +1,12 @@
 import './Nav.css'
 import React from 'react'
 
+import NavItem from './NavItem'
+
 export default props =>
     <aside className="menu-area">
         <nav className="menu">
-            {/* Fazer um componente para cada item do menu lateral*/}
-            <a href="#/">
-                <i className="fa fa-home"></i> Início
-            </a>
-
-            <a href="#/users">
-                <i className="fa fa-users"></i> Usuários
-            </a>
+            <NavItem label="Início" icon="home" link="#/"/>
+            <NavItem label="Início" icon="users" link="#/users"/>
         </nav>
     </aside>
